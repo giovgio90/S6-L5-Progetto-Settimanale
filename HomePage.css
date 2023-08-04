@@ -1,3 +1,7 @@
+:root {
+  --mx-lg-6: 200px;
+}
+
 body {
   background-color: #141414;
 }
@@ -18,13 +22,17 @@ nav img {
   width: 23px;
 }
 
+.user h5 {
+  font-size: 0.8rem;
+}
+
 .user > li {
   list-style: none;
 }
 
 .dropdown-menu {
   background-color: #141414;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .films {
@@ -34,17 +42,18 @@ nav img {
 .films img {
   width: 100%;
 }
-.social-info {
-  margin-inline: 200px;
-}
 
-.social img {
-  color: red;
+.new-episodes h4 {
+  font-size: 0.6rem;
 }
 
 .social-info h6 {
   font-size: 0.7rem;
   line-height: 1.5;
+}
+
+.social-info {
+  margin-inline: 200px;
 }
 
 .social-info button {
@@ -56,7 +65,18 @@ nav img {
   font-size: 0.6rem;
 }
 
-ion-icon {
+.user div ion-icon {
+  font-size: 1.2rem;
   color: grey;
-  font-size: 0.9rem;
+}
+
+.social ion-icon {
+  color: grey;
+  font-size: 1.3rem;
+}
+
+@media (min-width: 992px) {
+  .social-info {
+    margin-inline: 200px;
+  }
 }

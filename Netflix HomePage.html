@@ -18,10 +18,20 @@
         <a class="navbar-brand" href="#">
           <img src="/assets/netflix_logo.png" alt="Logo" />
         </a>
-
+        <button
+          class="navbar-toggler me-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white">
-            <li class="nav-item">
+            <li class="nav-item d-none">
               <a class="nav-link active text-white-50" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
@@ -38,12 +48,15 @@
             </li>
           </ul>
         </div>
-        <div class="user">
+        <div class="user d-flex">
+          <div class="pe-3"><ion-icon name="search-outline"></ion-icon></div>
+          <div><h5 class="pe-3 text-secondary">KIDS</h5></div>
+          <div class="pe-3"><ion-icon name="notifications-outline"></ion-icon></div>
           <li class="nav-item dropdown text-white">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <img src="/assets/avatar.png" alt="User" />
             </a>
-            <ul class="dropdown-menu border border-light">
+            <ul class="dropdown-menu dropdown-menu-end border border-light">
               <li><a class="dropdown-item text-white d-flex" href="#">Profile Page</a></li>
               <li><hr class="dropdown-divider" /></li>
               <li><a class="dropdown-item text-white" href="#">Settings Page</a></li>
@@ -53,9 +66,9 @@
       </div>
     </nav>
     <header class="container mb-4">
-      <div class="row">
-        <div class="col-2"><h1 class="fs-2 text-white">TV Shows</h1></div>
-        <div class="dropdown col-8 pt-1">
+      <div class="row align-items-center">
+        <div class="col-4 col-sm-4 col-md-3 col-lg-2"><h1 class="fs-2 text-white">TV Shows</h1></div>
+        <div class="dropdown col-4 col-sm-3 col-md-4 col-lg-4 pt-sm-0 ps-sm-0 pt-1">
           <button
             class="btn bg-black text-white border border-light rounded-0 dropdown-toggle"
             type="button"
@@ -70,7 +83,7 @@
             <li><a class="dropdown-item text-white" href="#">Comic</a></li>
           </ul>
         </div>
-        <div class="col-2 text-end d-flex justify-content-end align-self-center">
+        <div class="col-4 col-sm-5 col-md-5 col-lg-6 d-flex justify-content-end align-self-center">
           <div class="border px-2 pt-0">
             <ion-icon name="list-outline"></ion-icon>
           </div>
@@ -78,52 +91,62 @@
         </div>
       </div>
     </header>
-    <section class="container films">
+    <section class="container films mb-1 mb-sm-2 mb-md-4 mb-lg-5">
       <h2 class="fs-4 text-white mb-3">Trending Now</h2>
-      <div class="row gx-1 mb-5">
-        <div class="col-2">
+      <div class="row gx-1 gy-1 mb-xs-1 mb-lg-5">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
           <img src="./assets/media/media0.webp" alt="film1" />
         </div>
-        <div class="col-2"><img src="./assets/media/media3.webp" alt="film2" /></div>
-        <div class="col-2"><img src="./assets/media/media1.jpg" alt="film3" /></div>
-        <div class="col-2"><img src="./assets/media/media2.webp" alt="film4" /></div>
-        <div class="col-2"><img src="./assets/media/media4.jpg" alt="film5" /></div>
-        <div class="col-2"><img src="./assets/media/media5.webp" alt="film6" /></div>
+        <div class="new-episodes col-xs-12 col-sm-6 col-md-4 col-lg-2 position-relative">
+          <img src="./assets/media/media3.webp" alt="film2" />
+          <div class="position-absolute bottom-0 start-2">
+            <h4 class="bg-danger px-2 text-center text-white">NEW EPISODES</h4>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2"><img src="./assets/media/media1.jpg" alt="film3" /></div>
+        <div class="new-episodes col-xs-12 col-sm-6 col-md-4 col-lg-2 position-relative">
+          <img src="./assets/media/media2.webp" alt="film4" />
+          <div class="position-absolute bottom-0 start-2">
+            <h4 class="bg-danger px-2 text-center text-white">NEW EPISODE</h4>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2"><img src="./assets/media/media4.jpg" alt="film5" /></div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2"><img src="./assets/media/media5.webp" alt="film6" /></div>
       </div>
 
-      <h2 class="fs-4 text-white mb-3">Whatch It Again</h2>
-      <div class="row gx-1 mb-4">
-        <div class="col-2">
+      <h2 class="fs-4 text-white mb-3 mt-4">Whatch It Again</h2>
+      <div class="row gx-1 gy-1 mb-4 mb-xs-2">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
           <img src="./assets/media/media11.jpg" alt="film7" />
         </div>
-        <div class="col-2"><img src="./assets/media/media6.jpg" alt="film8" /></div>
-        <div class="col-2"><img src="./assets/media/media7.webp" alt="film9" /></div>
-        <div class="col-2"><img src="./assets/media/media8.webp" alt="film10" /></div>
-        <div class="col-2"><img src="./assets/media/media9.jpg" alt="film11" /></div>
-        <div class="col-2"><img src="./assets/media/media10.jpg" alt="film12" /></div>
+        <div class="col col-sm-6 col-md-4 col-lg-2"><img src="./assets/media/media6.jpg" alt="film8" /></div>
+        <div class="col col-sm-6 col-md-4 col-lg-2"><img src="./assets/media/media7.webp" alt="film9" /></div>
+        <div class="col col-sm-6 col-md-4 col-lg-2"><img src="./assets/media/media8.webp" alt="film10" /></div>
+        <div class="col col-sm-6 col-md-4 col-lg-2"><img src="./assets/media/media9.jpg" alt="film11" /></div>
+        <div class="col col-sm-6 col-md-4 col-lg-2"><img src="./assets/media/media10.jpg" alt="film12" /></div>
       </div>
 
       <h2 class="fs-4 text-white mb-3">New Releases</h2>
-      <div class="row gx-1 mb-4">
-        <div class="col-2">
+      <div class="row gx-1 gy-1 mb-4">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
           <img src="./assets/media/media17.jpg" alt="film13" />
         </div>
-        <div class="col-2"><img src="./assets/media/media12.jpg" alt="film14" /></div>
-        <div class="col-2"><img src="./assets/media/media13.jpg" alt="film15" /></div>
-        <div class="col-2"><img src="./assets/media/media14.webp" alt="film16" /></div>
-        <div class="col-2"><img src="./assets/media/media15.jpg" alt="film17" /></div>
-        <div class="col-2"><img src="./assets/media/media16.webp" alt="film18" /></div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2"><img src="./assets/media/media12.jpg" alt="film14" /></div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2"><img src="./assets/media/media13.jpg" alt="film15" /></div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2"><img src="./assets/media/media14.webp" alt="film16" /></div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2"><img src="./assets/media/media15.jpg" alt="film17" /></div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2"><img src="./assets/media/media16.webp" alt="film18" /></div>
       </div>
     </section>
-    <footer class="container">
-      <div class="social-info">
+    <footer class="container pt-lg-4">
+      <div class="social-info mx-2 mx-md-5 px-lg-5">
         <div class="social mb-2">
           <ion-icon name="logo-facebook" class="pe-2"></ion-icon>
           <ion-icon name="logo-instagram" class="pe-2"></ion-icon>
           <ion-icon name="logo-twitter" class="pe-2"></ion-icon>
           <ion-icon name="logo-youtube" class="pe-2"></ion-icon>
         </div>
-        <div class="info row d-flex mb-3">
+        <div class="info row d-flex justify-content-center mb-3">
           <div class="col-3 text-white-50">
             <h6 class="fw-normal">Audio and Subtitles</h6>
             <h6 class="fw-normal">Media Center</h6>

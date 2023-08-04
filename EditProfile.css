@@ -11,7 +11,7 @@ nav img {
 }
 
 .logo img {
-  width: 80px;
+  width: 110px;
 }
 
 .settings button {
@@ -32,10 +32,24 @@ nav img {
   background-color: #141414;
 }
 
+.btn-group label {
+  font-size: 1rem;
+}
+
 .btn-check {
   background-color: rgb(61, 61, 61);
 }
 
 .text-check h4 {
   font-size: 0.8rem;
+}
+
+.logo {
+  position: relative;
+}
+
+.logo ion-icon {
+  position: absolute;
+  right: 100px;
+  top: 86px;
 }
