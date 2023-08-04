@@ -1,0 +1,41 @@
+body {
+  background-color: #141414;
+}
+
+nav {
+  background-image: linear-gradient(black, #141414);
+}
+
+nav img {
+  width: 100px;
+}
+
+.logo img {
+  width: 80px;
+}
+
+.settings button {
+  font-size: 0.9rem;
+}
+
+.maturity h4 {
+  font-size: 0.9rem;
+  background-color: rgb(61, 61, 61);
+}
+
+.maturity h5 {
+  font-size: 0.8rem;
+}
+
+.maturity button {
+  font-size: 0.9rem;
+  background-color: #141414;
+}
+
+.btn-check {
+  background-color: rgb(61, 61, 61);
+}
+
+.text-check h4 {
+  font-size: 0.8rem;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Edit Profile</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="EditProfile.css" />
+  </head>
+  <body>
+    <nav class="navbar p-1 mb-4">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/netflix_logo.png" alt="Bootstrap" />
+        </a>
+      </div>
+    </nav>
+    <div class="container">
+      <main class="row justify-content-center">
+        <div class="col-5">
+          <div class="border-bottom border-secondary mb-3">
+            <div>
+              <h1 class="text-white fw-normal">Edit Profile</h1>
+            </div>
+          </div>
+
+          <div class="settings d-flex">
+            <div class="logo pe-3"><img src="/assets/kids_icon.png" alt="kids" /></div>
+            <div class="text-white d-flex flex-column w-75">
+              <h3 class="fs-5 fw-normal mb-4 bg-secondary p-2">Strive Student</h3>
+              <div>
+                <h3 class="fs-5 fw-normal text-white-50">Language:</h3>
+                <div class="btn-group">
+                  <button class="btn btn-black bg-black btn-lg text-white mb-3 border pt-0 pb-0" type="button">
+                    English
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-lg btn-black dropdown-toggle dropdown-toggle-split text-white bg-black mb-3 border p-2"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <span class="visually-hidden">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Italian</a></li>
+                    <li><a class="dropdown-item" href="#">Spanish</a></li>
+                    <li><a class="dropdown-item" href="#">Chinese</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="maturity text-white border-top border-bottom border-secondary py-4 mb-3">
+                <h3 class="fs-5 fw-normal text-white-50 mb-3">Maturity Settings:</h3>
+                <h4 class="fw-normal text-white p-2 mb-3">ALL MATURITY RATINGS</h4>
+                <h5 class="mb-3">Show Titles of all maturity ratings for this profile.</h5>
+                <button class="text-secondary border border-secondary px-4 mt-2">EDIT</button>
+              </div>
+              <div class="row gx-4 mb-2">
+                <div class="btn-group col-1" role="group" aria-label="Basic checkbox toggle button group">
+                  <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off" />
+                  <label class="btn btn-outline-secondary rounded-0" for="btncheck1"
+                    ><ion-icon name="checkmark" class="text-white"></ion-icon
+                  ></label>
+                </div>
+                <div class="text-check col-11">
+                  <h4>Autoplay next episode in a series on all devices.</h4>
+                </div>
+              </div>
+              <div class="row gx-4">
+                <div class="btn-group col-1" role="group" aria-label="Basic checkbox toggle button group">
+                  <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off" />
+                  <label class="btn btn-outline-secondary rounded-0" for="btncheck2"
+                    ><ion-icon name="checkmark" class="text-white"></ion-icon
+                  ></label>
+                </div>
+                <div class="text-check col-11">
+                  <h4>Autoplay previews while browsing on all devices.</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row border-top mt-4 mb-3 gx-4">
+            <div class="btn-group col-3 mt-3" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked />
+              <label class="text-secondary btn btn-outline-light roundend-0" for="btnradio1">SAVE</label>
+            </div>
+
+            <div class="col-4 mt-3">
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" />
+              <label class="text-secondary btn btn-outline-light px-4" for="btnradio2">CANCEL</label>
+            </div>
+            <div class="col-5 mt-3">
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" />
+              <label class="text-secondary btn btn-outline-light px-4" for="btnradio3">DELETE PROFILE</label>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

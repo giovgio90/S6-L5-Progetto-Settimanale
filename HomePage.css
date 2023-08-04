@@ -1,0 +1,62 @@
+body {
+  background-color: #141414;
+}
+
+nav img {
+  width: 80px;
+}
+
+.nav-item {
+  font-size: 0.8rem;
+}
+
+.nav-item:hover {
+  font-weight: bold;
+}
+
+.user img {
+  width: 23px;
+}
+
+.user > li {
+  list-style: none;
+}
+
+.dropdown-menu {
+  background-color: #141414;
+  font-size: 0.8rem;
+}
+
+.films {
+  margin-bottom: 100px;
+}
+
+.films img {
+  width: 100%;
+}
+.social-info {
+  margin-inline: 200px;
+}
+
+.social img {
+  color: red;
+}
+
+.social-info h6 {
+  font-size: 0.7rem;
+  line-height: 1.5;
+}
+
+.social-info button {
+  background-color: #141414;
+  font-size: 0.7rem;
+}
+
+.end-page h6 {
+  font-size: 0.6rem;
+}
+
+ion-icon {
+  color: grey;
+  font-size: 0.9rem;
+}
